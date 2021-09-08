@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_Remove Item from Cart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>16ee7436-61a7-4abd-b7c8-515d2687ee93</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c8e4d53a-17e7-4cb3-9dd7-bcc6764376d1</id>
+      <masked>false</masked>
+      <name>title_item</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d2f9e0a2-984a-49cd-8b57-edde02bdcfcb</id>
+      <masked>false</masked>
+      <name>total_item</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>70a122fc-5c47-419c-b685-bc2cf66b071a</id>
+      <masked>false</masked>
+      <name>status_cart</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d0fb7cdc-6c29-4a71-8360-381af7cf1730</id>
+      <masked>false</masked>
+      <name>friend_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>be72b820-8948-417d-9444-73e2e524b506</id>
+      <masked>false</masked>
+      <name>your_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6b763468-8b2f-4e20-b425-2b2beac5ead7</id>
+      <masked>false</masked>
+      <name>personal_message</name>
+   </variable>
+</TestCaseEntity>

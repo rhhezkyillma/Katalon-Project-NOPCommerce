@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC16_Send Recommendation Item to Friend without login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>feaf3deb-658a-4118-bbed-6fff0b751f9c</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6d7c3f02-80d4-47f6-845a-93f9f75202cf</id>
+      <masked>false</masked>
+      <name>title_item</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>efb2f528-11a8-4d6c-bc98-373e4f7bc99c</id>
+      <masked>false</masked>
+      <name>total_item</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>115f1e5f-9a69-4dfe-8679-96da3a04be22</id>
+      <masked>false</masked>
+      <name>status_cart</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fca88110-9e5e-44ac-8a1e-b1643ebcfc20</id>
+      <masked>false</masked>
+      <name>friend_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>509d6ffc-740a-43dc-bbad-576562ac6dcf</id>
+      <masked>false</masked>
+      <name>your_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>96cf65c7-d3c9-4540-80e7-fadf26b74f70</id>
+      <masked>false</masked>
+      <name>personal_message</name>
+   </variable>
+</TestCaseEntity>

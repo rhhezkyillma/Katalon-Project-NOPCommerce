@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC15_Checkout without check terms of service</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>005e12ae-5514-4519-8618-c9ef59a087df</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0c72fce8-ab85-4507-b8cd-b7622254a776</id>
+      <masked>false</masked>
+      <name>title_item</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c9978689-0e11-4028-bcad-7236eb4ae714</id>
+      <masked>false</masked>
+      <name>total_item</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9c43640c-85db-437a-b61d-4f4a2990751e</id>
+      <masked>false</masked>
+      <name>status_cart</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>84d4abb7-b8c3-4d60-acd5-f9a7c7498d8f</id>
+      <masked>false</masked>
+      <name>friend_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ee440c77-5a82-4167-884b-78a5840ab60c</id>
+      <masked>false</masked>
+      <name>your_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>675ae1c4-5baa-437a-9809-6253e4d0cbaa</id>
+      <masked>false</masked>
+      <name>personal_message</name>
+   </variable>
+</TestCaseEntity>

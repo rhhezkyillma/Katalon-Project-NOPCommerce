@@ -14,8 +14,8 @@
    <testCaseLink>
       <guid>21f75fae-efbe-4e80-9686-7db6246fbf45</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/TC01_Menambahkan Item to Cart</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC01_Add Item to Cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>ebbf2c09-b3f9-4923-aa59-21ca92fe1731</id>
@@ -65,7 +65,7 @@
    <testCaseLink>
       <guid>1228661d-bd70-4bfa-a705-5ba82b502cfa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC02_Update Shopping Cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -146,7 +146,7 @@
    <testCaseLink>
       <guid>52f938b2-cd21-4eb7-b437-46130b136c57</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC03_Estimate Shopping Cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -227,7 +227,7 @@
    <testCaseLink>
       <guid>37dd3643-0338-4f14-a514-cfdf2782440a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC04_Checkout as guest</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -413,7 +413,7 @@
    <testCaseLink>
       <guid>7c6687b3-21fe-45ca-82e8-1d22f3d4c0aa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC05_Checkout with Register</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -428,8 +428,8 @@
          <combinationType>ONE</combinationType>
          <id>62d1ac5f-7dc3-4ea0-b12d-01d5c5b2b626</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/db_register</testDataId>
       </testDataLink>
@@ -674,7 +674,7 @@
    <testCaseLink>
       <guid>ad68eecd-060c-480e-8008-8a36c782f3b1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC06_Checkout with Login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -881,7 +881,7 @@
    <testCaseLink>
       <guid>8f2a188b-4789-4c16-bffc-3b8ae7395c8e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC07_Remove Item from Cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -932,7 +932,7 @@
    <testCaseLink>
       <guid>31f54144-8e99-4ee7-9d79-889f18598b58</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC08_Send Recommendation Item to Friend</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -1098,6 +1098,609 @@
          <type>DATA_COLUMN</type>
          <value>rating</value>
          <variableId>6b276f1c-1985-4e48-9ee0-f9d5b60af5d8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e9b21818-d152-4ea1-a127-53ec42a16811</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC10_Update Wish List</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2d4205c3-813f-412d-befd-89775f35e17d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_cart</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>judul_item</value>
+         <variableId>e92f1040-4383-40b1-bccd-220b44638ba5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item</value>
+         <variableId>c5a3f4a0-f5c0-4975-aa90-f0ede1fe6b6f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status_cart</value>
+         <variableId>b1de8c3e-7555-4f29-9145-349e64118a24</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>friend_email</value>
+         <variableId>acd52f70-9bcb-4dd3-b8fe-828249442b12</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>your_email</value>
+         <variableId>08e1044f-d654-42cd-a52d-751b3ace7bc8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>personal_message</value>
+         <variableId>5b89a8df-0e58-4150-9430-79251dfa8611</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item_updated</value>
+         <variableId>405de8c4-e5d2-4239-9c2e-c119e6cae4eb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>select_country</value>
+         <variableId>6b0293ce-1b4b-4e6c-bfeb-7b7ba3b87915</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>other</value>
+         <variableId>d8629dbe-97bd-410d-9b18-924726e73225</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>postal_code</value>
+         <variableId>ef02158c-e4d4-40bf-ad4b-daf177462919</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2d4205c3-813f-412d-befd-89775f35e17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>shipping_method</value>
+         <variableId>894d93d6-598c-46d6-aebf-ee0684c5139c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c3ce1008-7b26-44f4-b1fb-99959e4dda4c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC11_Add to Cart from Wish List</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>9539ef82-5a73-436a-b32a-d31440e7c701</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_cart</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>judul_item</value>
+         <variableId>5b120932-153a-4a97-b2dd-1802326c17eb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item</value>
+         <variableId>7d10fc6f-9c14-4980-9999-5457aba8327b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status_cart</value>
+         <variableId>e22662eb-ed2f-49b6-98ed-824c1fe4c54e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>friend_email</value>
+         <variableId>899407d6-27b6-4e63-8011-d1d90a17d4f7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>your_email</value>
+         <variableId>9c4ef3c0-c752-49eb-bcd8-a2bca1656051</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>personal_message</value>
+         <variableId>08f3495d-512b-4d79-a0f1-10f2ca03d902</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item_updated</value>
+         <variableId>e66b4d76-7068-4160-b87b-0c71ee19577e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>select_country</value>
+         <variableId>25f9541d-8e31-42fc-bd9e-3517a9623b3e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>other</value>
+         <variableId>f5e8afd3-0df5-4dde-b755-098864357364</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>postal_code</value>
+         <variableId>0eb410eb-bb23-45ec-9908-5d20962eb149</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9539ef82-5a73-436a-b32a-d31440e7c701</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>shipping_method</value>
+         <variableId>ebd5f175-44b9-4925-afb7-b57fac6c7044</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d58095a7-3ee6-4985-a604-6a970389a93b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC12_Sort Data Katalog</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>da53273d-eaa6-44a6-9092-d564312524e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC13_Checkout with login when user not registered</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3f8a86cf-0270-4fbf-9cef-79053b1112dc</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_cart</testDataId>
+      </testDataLink>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a1a0e561-c209-4548-bfef-48ef3b34a662</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/db_login</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>3f8a86cf-0270-4fbf-9cef-79053b1112dc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>judul_item</value>
+         <variableId>c73e50b3-6e26-4701-bfc7-a8aab0437dc3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3f8a86cf-0270-4fbf-9cef-79053b1112dc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item</value>
+         <variableId>f68bc4cd-5349-4132-8434-70d2487e0f3d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3f8a86cf-0270-4fbf-9cef-79053b1112dc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status_cart</value>
+         <variableId>9704262c-e725-4f2e-895d-c47d07047fd2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3f8a86cf-0270-4fbf-9cef-79053b1112dc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>friend_email</value>
+         <variableId>79ba012e-e335-4b87-9792-8135ebc171e8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3f8a86cf-0270-4fbf-9cef-79053b1112dc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>your_email</value>
+         <variableId>c090796d-bba4-4863-9a33-ffd4e30ce7c2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3f8a86cf-0270-4fbf-9cef-79053b1112dc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>personal_message</value>
+         <variableId>7836e23f-e830-4c1d-91e0-9b59be348016</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a1a0e561-c209-4548-bfef-48ef3b34a662</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>d339a9b3-ec79-4f32-ad34-6c85c39b81b1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a1a0e561-c209-4548-bfef-48ef3b34a662</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>3b1fa015-e66c-4a53-ab3f-9b5bc8409e75</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e625f969-94df-4c52-b7f0-9939ba1ac73e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC14_Checkout with Register when data not valid</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2a783426-2497-4aca-bef2-0b67bd40619e</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_cart</testDataId>
+      </testDataLink>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_billing</testDataId>
+      </testDataLink>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c87d8234-0e84-4711-ba0b-a6340f167fab</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/db_register</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>2a783426-2497-4aca-bef2-0b67bd40619e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>judul_item</value>
+         <variableId>9a50466e-97ed-4af2-97b8-94cea7f3f3fc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2a783426-2497-4aca-bef2-0b67bd40619e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item</value>
+         <variableId>37c7e3e5-2ecf-43f4-b184-9fd6d4a4241c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2a783426-2497-4aca-bef2-0b67bd40619e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status_cart</value>
+         <variableId>0ceb9067-5717-4365-83f5-f770ba446250</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2a783426-2497-4aca-bef2-0b67bd40619e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>friend_email</value>
+         <variableId>5f4b53b1-2cee-4761-bd9d-6f9e56e25f55</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2a783426-2497-4aca-bef2-0b67bd40619e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>your_email</value>
+         <variableId>ccb5be52-9514-4328-b587-8ec60b82fe32</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2a783426-2497-4aca-bef2-0b67bd40619e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>personal_message</value>
+         <variableId>0c16e3a6-16ce-481b-8f1c-5219dfb7c141</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>gender</value>
+         <variableId>ed0c4250-dc3c-4582-938b-2dec712d9414</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>first_name</value>
+         <variableId>ba207df4-2a11-4801-b593-8c19b4e0b88e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>last_name</value>
+         <variableId>eaccf580-09b8-4224-95a4-83bcbbd8856b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>birth_day</value>
+         <variableId>b1c44277-027a-4bf0-bb31-e6e16abb0760</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>birth_month</value>
+         <variableId>52c52a2a-eecd-425c-9b9e-9894a7cfff7c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>birth_year</value>
+         <variableId>9cccb296-8cda-43e8-8c84-bdffbf07b7ba</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
+         <variableId>66301a87-46b4-430b-9c16-57fcefc5a045</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>company_name</value>
+         <variableId>feebba94-e6e3-445f-a1f5-87428a4f8582</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>options</value>
+         <variableId>10a5fc56-3806-447b-8a36-1b6dc02de279</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>660244c8-36ca-4efc-aa37-5e8a6c3bcf22</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c87d8234-0e84-4711-ba0b-a6340f167fab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>confirm_password</value>
+         <variableId>2e437428-f3ed-4b48-8c0b-7e73a3eb737d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>first_name</value>
+         <variableId>7cfdfd61-0d5a-44e8-ac74-f65ed3646bf1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>last_name</value>
+         <variableId>50172047-0046-4b8b-b2f1-2cfe95ef9b81</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
+         <variableId>10a8bbd0-aa2a-422e-bc56-5ec15762c60e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>company</value>
+         <variableId>283175ee-89ff-4335-8e12-6d15acf89a86</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>country</value>
+         <variableId>a9866ec4-fbae-4a4b-ad49-47049b4f1562</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>province</value>
+         <variableId>544d9024-6242-404a-90ee-322232032a32</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>city</value>
+         <variableId>73372590-cf2c-4128-8a43-a8c1331d378d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>address1</value>
+         <variableId>ce788fc9-baf1-4cb9-9c2c-b77cd3873d21</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>addres2</value>
+         <variableId>82948912-15ed-442d-a5c7-6dde7e345639</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>postal_code</value>
+         <variableId>a318eba9-1069-4735-94f5-75c25fec3b38</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>phone_number</value>
+         <variableId>f92d8e1e-3536-4df1-9353-37f408a40a25</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>fax_number</value>
+         <variableId>ebd13513-30c5-4c24-9e36-30debcd786df</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ship_to</value>
+         <variableId>6286a80a-a861-4bae-ba2e-1cd4ae5dffbc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>shipping_method</value>
+         <variableId>d0ad6447-d495-4ab2-92d8-f42c8282eac5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>payment_method</value>
+         <variableId>47e790eb-ef70-4b7e-a1bd-e83bc17a957c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jenis_credit_card</value>
+         <variableId>6e246a6f-94f4-4600-a390-ec0630619234</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>cardholder_name</value>
+         <variableId>73e3556f-fd91-4091-8ca5-0b18226f0f68</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>card_number</value>
+         <variableId>49b7f298-7cb8-4ad2-99e7-f8657f899579</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expiration_month</value>
+         <variableId>617432f2-d839-46be-86a1-5579c6b80dc9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expiration_year</value>
+         <variableId>ee1752f1-1925-4a1b-8d8c-6f9412022f0f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>00550ff0-8bc8-4f00-b17a-acf3b618b2b2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>card_code</value>
+         <variableId>d12e7886-fcbf-4860-935d-926a5bdc5c3c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>634386a3-bd81-47b7-b1d7-eed15a1677bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC15_Checkout without check terms of service</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>9b714cd8-7fec-4736-8fca-1ada4415c88b</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_cart</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>9b714cd8-7fec-4736-8fca-1ada4415c88b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>judul_item</value>
+         <variableId>0c72fce8-ab85-4507-b8cd-b7622254a776</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9b714cd8-7fec-4736-8fca-1ada4415c88b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item</value>
+         <variableId>c9978689-0e11-4028-bcad-7236eb4ae714</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9b714cd8-7fec-4736-8fca-1ada4415c88b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status_cart</value>
+         <variableId>9c43640c-85db-437a-b61d-4f4a2990751e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9b714cd8-7fec-4736-8fca-1ada4415c88b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>friend_email</value>
+         <variableId>84d4abb7-b8c3-4d60-acd5-f9a7c7498d8f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9b714cd8-7fec-4736-8fca-1ada4415c88b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>your_email</value>
+         <variableId>ee440c77-5a82-4167-884b-78a5840ab60c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9b714cd8-7fec-4736-8fca-1ada4415c88b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>personal_message</value>
+         <variableId>675ae1c4-5baa-437a-9809-6253e4d0cbaa</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d8a08fef-6dba-4cd1-b227-0b1f3ab88a7b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC16_Send Recommendation Item to Friend without login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ce5093f2-1967-4ec3-9032-457e09888ae0</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/db_cart</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>ce5093f2-1967-4ec3-9032-457e09888ae0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>judul_item</value>
+         <variableId>6d7c3f02-80d4-47f6-845a-93f9f75202cf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ce5093f2-1967-4ec3-9032-457e09888ae0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jumlah_item</value>
+         <variableId>efb2f528-11a8-4d6c-bc98-373e4f7bc99c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ce5093f2-1967-4ec3-9032-457e09888ae0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status_cart</value>
+         <variableId>115f1e5f-9a69-4dfe-8679-96da3a04be22</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ce5093f2-1967-4ec3-9032-457e09888ae0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>friend_email</value>
+         <variableId>fca88110-9e5e-44ac-8a1e-b1643ebcfc20</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ce5093f2-1967-4ec3-9032-457e09888ae0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>your_email</value>
+         <variableId>509d6ffc-740a-43dc-bbad-576562ac6dcf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ce5093f2-1967-4ec3-9032-457e09888ae0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>personal_message</value>
+         <variableId>96cf65c7-d3c9-4540-80e7-fadf26b74f70</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
